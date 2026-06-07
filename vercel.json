@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "functions": {
+    "api/start.py": {
+      "maxDuration": 10,
+      "memory": 1024
+    },
+    "api/attack.py": {
+      "maxDuration": 10,
+      "memory": 1024
+    }
+  },
+  "routes": [
+    {
+      "src": "/start",
+      "dest": "/api/start.py"
+    },
+    {
+      "src": "/attack",
+      "dest": "/api/attack.py"
+    }
+  ]
+}
